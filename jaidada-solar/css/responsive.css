@@ -1,0 +1,138 @@
+/* =====================================================
+   responsive.css
+   Mobile-first @media queries.
+   ===================================================== */
+
+/* ====================================================
+   Base (0–767px) — mobile defaults already in components
+   ==================================================== */
+
+/* On smallest screens, give a bit more breathing room */
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 88px;
+    padding-bottom: 100px;
+  }
+  .hero-cta-row { flex-direction: column; align-items: stretch; }
+  .hero-cta-row .btn-primary,
+  .hero-cta-row .btn-secondary { width: 100%; }
+  .hero-trust-strip { gap: 12px; }
+  .whatsapp-float { bottom: 20px; right: 20px; }
+}
+
+/* ====================================================
+   Tablet (≥ 768px)
+   ==================================================== */
+@media (min-width: 768px) {
+  /* Layout */
+  .two-col { grid-template-columns: 1fr 1fr; gap: 48px; }
+  .two-col--55-45 { grid-template-columns: 1.15fr 1fr; }
+
+  .card-grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .card-grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .card-grid--4 { grid-template-columns: repeat(2, 1fr); }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-grid__featured { grid-column: 1 / -1; }
+
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 48px; }
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .contact-grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+
+  .about-features { grid-template-columns: repeat(2, 1fr); }
+
+  /* Featured service card switches to side-by-side */
+  .service-card--featured {
+    flex-direction: row;
+  }
+  .service-card--featured .card-image-wrapper {
+    width: 50%;
+    aspect-ratio: auto;
+    min-height: 320px;
+  }
+  .service-card--featured .card-body {
+    width: 50%;
+    padding: 40px;
+    justify-content: center;
+  }
+}
+
+/* ====================================================
+   Desktop (≥ 1024px)
+   ==================================================== */
+@media (min-width: 1024px) {
+  /* Show desktop nav, hide mobile pieces */
+  .nav__menu { display: flex; }
+  .nav__cta  { display: inline-flex; }
+  .nav__toggle { display: none; }
+
+  .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 32px; }
+
+  .card-grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .card-grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Process timeline — horizontal */
+  .process__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+  }
+  .process__list::before {
+    content: '';
+    position: absolute;
+    top: 48px;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--color-solar-amber) 8%,
+      var(--color-solar-amber) 92%,
+      transparent 100%
+    );
+    opacity: 0.5;
+    z-index: 0;
+  }
+
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 56px; }
+
+  .about__visual { max-width: none; }
+}
+
+/* ====================================================
+   Large desktop (≥ 1280px)
+   ==================================================== */
+@media (min-width: 1280px) {
+  .nav__menu { gap: 36px; }
+  .hero__content { max-width: 760px; }
+  .about-features { gap: 24px; }
+}
+
+/* ====================================================
+   XL (≥ 1600px) — container caps at 1400px (already in :root)
+   ==================================================== */
+@media (min-width: 1600px) {
+  .container { padding-left: 48px; padding-right: 48px; }
+}
+
+/* ====================================================
+   Disable heavy effects on small screens for perf
+   ==================================================== */
+@media (max-width: 767px) {
+  /* No large 3D tilt on touch */
+  .service-card { transform: none !important; }
+  /* Reduce hover lift to keep things calm */
+  .why-card:hover,
+  .service-card:hover { transform: translateY(-3px); }
+}

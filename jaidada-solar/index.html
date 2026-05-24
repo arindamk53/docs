@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Solar Panel Installation in Haldia | Jaidada Solar Tech Energy</title>
+  <meta name="description" content="Reliable solar panel installation, generator sales, and inverter solutions in Haldia, West Bengal. Jaidada Solar Tech Energy — 50+ projects, 10+ satisfied clients.">
+  <meta name="author" content="Jaidada Solar Tech Energy">
+  <meta name="keywords" content="solar panel installation Haldia, solar West Bengal, solar power Haldia, generator sales Haldia, inverter battery Haldia, Ghar Ghar Solar, industrial solar, Jaidada Solar Tech Energy">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jaidada Solar Tech Energy — Powering Your Future With Clean Energy">
+  <meta property="og:description" content="Haldia's premier solar partner — installation, generators, inverters, batteries, and maintenance for homes and industries.">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Preload critical assets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet">
+
+  <!-- CSS — keep order: variables → base → layout → components → animations → responsive -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon (re-uses repo favicon if missing local file) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='28' fill='%23F5A623'/%3E%3Cg stroke='%23F5A623' stroke-width='6' stroke-linecap='round'%3E%3Cline x1='50' y1='6' x2='50' y2='20'/%3E%3Cline x1='50' y1='80' x2='50' y2='94'/%3E%3Cline x1='6' y1='50' x2='20' y2='50'/%3E%3Cline x1='80' y1='50' x2='94' y2='50'/%3E%3Cline x1='17' y1='17' x2='27' y2='27'/%3E%3Cline x1='73' y1='73' x2='83' y2='83'/%3E%3Cline x1='83' y1='17' x2='73' y2='27'/%3E%3Cline x1='27' y1='73' x2='17' y2='83'/%3E%3C/g%3E%3C/svg%3E">
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jaidada Solar Tech Energy",
+    "image": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kadamtala More",
+      "addressLocality": "Haldia",
+      "postalCode": "721657",
+      "addressRegion": "West Bengal",
+      "addressCountry": "IN"
+    },
+    "telephone": ["+919547488969", "+917008213096"],
+    "email": "info@jaidasasolartech.com",
+    "openingHours": "Mo-Su 09:00-21:00",
+    "url": "https://jaidasasolartech.com",
+    "areaServed": "Haldia, West Bengal, India",
+    "description": "Solar panel installation, generator sales, inverter and battery solutions, and ongoing maintenance for residential and industrial clients across Haldia and West Bengal."
+  }
+  </script>
+
+  <!-- Vendor scripts (deferred) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <!-- Site scripts -->
+  <script src="js/particles.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/counter.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<!-- =====================================================
+     1. NAVIGATION
+     ===================================================== -->
+<header class="nav" role="banner">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="#home" aria-label="Jaidada Solar Tech Energy — Home">
+      <svg class="nav__logo-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" aria-hidden="true">
+        <circle cx="50" cy="50" r="18" fill="currentColor" stroke="none"/>
+        <line x1="50" y1="6"  x2="50" y2="22"/>
+        <line x1="50" y1="78" x2="50" y2="94"/>
+        <line x1="6"  y1="50" x2="22" y2="50"/>
+        <line x1="78" y1="50" x2="94" y2="50"/>
+        <line x1="17" y1="17" x2="29" y2="29"/>
+        <line x1="71" y1="71" x2="83" y2="83"/>
+        <line x1="83" y1="17" x2="71" y2="29"/>
+        <line x1="29" y1="71" x2="17" y2="83"/>
+      </svg>
+      <span class="nav__logo-text-wrap">
+        <span class="nav__logo-primary">JAIDADA</span>
+        <span class="nav__logo-secondary">SOLAR TECH ENERGY</span>
+      </span>
+    </a>
+
+    <nav class="nav__menu" aria-label="Primary">
+      <a class="nav__link" href="#home">Home</a>
+      <a class="nav__link" href="#about">About</a>
+      <a class="nav__link" href="#services">Services</a>
+      <a class="nav__link" href="#process">How It Works</a>
+      <a class="nav__link" href="#team">Team</a>
+      <a class="nav__link" href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav__cta" href="#contact">Enquire Now</a>
+
+    <button class="nav__toggle" type="button" aria-label="Open menu" aria-controls="mobile-drawer" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__overlay" aria-hidden="true"></div>
+
+<aside id="mobile-drawer" class="nav__drawer" aria-label="Mobile menu">
+  <a class="nav__link" href="#home">Home</a>
+  <a class="nav__link" href="#about">About</a>
+  <a class="nav__link" href="#services">Services</a>
+  <a class="nav__link" href="#process">How It Works</a>
+  <a class="nav__link" href="#team">Team</a>
+  <a class="nav__link" href="#contact">Contact</a>
+  <a class="nav__cta" href="#contact">Enquire Now</a>
+</aside>
+
+<main>
+
+<!-- =====================================================
+     2. HERO
+     ===================================================== -->
+<section id="home" class="hero" aria-label="Hero">
+  <div class="hero__bg image-placeholder shimmer">
+    <img
+      src="assets/images/hero-bg.webp"
+      alt="Solar panels on a rooftop in Haldia at golden hour"
+      width="1920" height="1080"
+      onerror="this.style.display='none'">
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero-eyebrow">Haldia's Premier Solar Partner</span>
+      <h1 class="hero-headline">
+        <span class="hero-line-1">POWERING</span>
+        <span class="hero-line-2">YOUR FUTURE</span>
+        <span class="hero-line-3">WITH CLEAN ENERGY</span>
+      </h1>
+      <p class="hero-subline">
+        Reliable solar installation, generator support, and battery solutions for
+        homes and industries across Haldia and West Bengal.
+      </p>
+      <div class="hero-cta-row">
+        <a class="btn-primary" href="#contact">Get Free Consultation</a>
+        <a class="btn-secondary" href="#services">View Our Work →</a>
+      </div>
+      <div class="hero-trust-strip">
+        <span>✦ 50+ Installations</span>
+        <span>✦ 10+ Happy Clients</span>
+        <span>✦ 9AM–9PM Support</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="hero-scroll__line"></span>
+    <span class="hero-scroll__label">Scroll</span>
+  </div>
+</section>
+
+<!-- =====================================================
+     3. ABOUT
+     ===================================================== -->
+<section id="about" class="section section--bg-warm" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="two-col two-col--55-45">
+      <div class="about__content reveal">
+        <span class="section-eyebrow">Who We Are</span>
+        <h2 id="about-heading">Reliable &amp; Green Energy<br>Solutions for Everyone</h2>
+        <p class="mt-lg">
+          Jaidada Solar Tech Energy is Haldia's trusted partner for solar power — bringing clean, affordable energy
+          solutions to homes, businesses, and industries across West Bengal. From rooftop solar panels and hybrid
+          inverter systems to generator sales and annual maintenance, we handle your energy needs end-to-end.
+        </p>
+        <p>
+          Our two core tracks — <strong>Ghar Ghar Solar</strong> for residential clients and
+          <strong>Industrial Solar</strong> for facilities — ensure every customer gets a solution built precisely
+          for their scale and budget.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feature-item">
+            <span class="about-feature-item__icon" aria-hidden="true">
+              <i data-lucide="home"></i>
+            </span>
+            <span class="about-feature-item__text">
+              <strong>Ghar Ghar Solar</strong>
+              <span>Affordable solar for every home in Haldia and beyond.</span>
+            </span>
+          </div>
+          <div class="about-feature-item">
+            <span class="about-feature-item__icon" aria-hidden="true">
+              <i data-lucide="factory"></i>
+            </span>
+            <span class="about-feature-item__text">
+              <strong>Industrial Solar</strong>
+              <span>Scalable, reliable solar power for industrial operations.</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__visual reveal">
+        <span class="about__badge">Reliable Power Solutions</span>
+        <div class="about__primary-card image-placeholder shimmer">
+          <img
+            src="assets/images/about-main.webp"
+            alt="Jaidada Solar Tech Energy installation team working on a rooftop array"
+            width="900" height="1100"
+            loading="lazy"
+            onerror="this.style.display='none'">
+        </div>
+        <div class="about__floating-card">
+          <h4>Our Solutions</h4>
+          <ul>
+            <li>Solar Panels &amp; Inverters</li>
+            <li>Off-grid, On-grid, Hybrid</li>
+            <li>Batteries &amp; UPS</li>
+            <li>Generator Sales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     4. STATS COUNTER
+     ===================================================== -->
+<section class="section section--bg-primary stats-section" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-number" data-target="10">0+</span>
+        <span class="stat-rule" aria-hidden="true"></span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="50">0+</span>
+        <span class="stat-rule" aria-hidden="true"></span>
+        <span class="stat-label">Projects Completed</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="100">0+</span>
+        <span class="stat-rule" aria-hidden="true"></span>
+        <span class="stat-label">Business Partners</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-target="50">0+</span>
+        <span class="stat-rule" aria-hidden="true"></span>
+        <span class="stat-label">Expert Members</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     5. SERVICES & PRODUCTS
+     ===================================================== -->
+<section id="services" class="section section--bg-surface" aria-labelledby="services-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <span class="section-eyebrow">What We Offer</span>
+      <h2 id="services-heading">Our Best <span class="text-gradient">Services &amp; Products</span></h2>
+      <p class="section-subheading">
+        Delivering reliable, eco-friendly power solutions tailored to your needs.
+      </p>
+    </header>
+
+    <div class="service-grid">
+      <!-- Featured -->
+      <article class="service-card service-card--featured service-grid__featured">
+        <div class="card-image-wrapper image-placeholder shimmer">
+          <img
+            src="assets/images/services/solar-installation.webp"
+            alt="Engineers installing rooftop solar panels at a residence in Haldia"
+            width="1200" height="675"
+            loading="lazy"
+            onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Core Service</span>
+          <h3 class="card-title">Solar Panel Installation</h3>
+          <p class="card-desc">
+            Efficient and professional installation of high-quality solar panels for homes, businesses, and
+            industries — designed for long-term savings and sustainability.
+          </p>
+          <a class="card-link" href="#contact">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Standard cards -->
+      <article class="service-card">
+        <div class="card-image-wrapper image-placeholder shimmer">
+          <img
+            src="assets/images/services/generator.webp"
+            alt="Industrial backup generator unit"
+            width="800" height="450"
+            loading="lazy"
+            onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Power Backup</span>
+          <h3 class="card-title">Generator Sales &amp; Support</h3>
+          <p class="card-desc">
+            Robust generators for backup power in residential, commercial, and industrial environments.
+            Diesel &amp; Petrol variants available.
+          </p>
+          <a class="card-link" href="#contact">Read More →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-image-wrapper image-placeholder shimmer">
+          <img
+            src="assets/images/services/maintenance.webp"
+            alt="Technician performing solar panel maintenance"
+            width="800" height="450"
+            loading="lazy"
+            onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Maintenance</span>
+          <h3 class="card-title">Solar Maintenance &amp; Repair</h3>
+          <p class="card-desc">
+            Regular maintenance and expert repair services to keep solar systems running efficiently and
+            maximise performance over time.
+          </p>
+          <a class="card-link" href="#contact">Read More →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-image-wrapper image-placeholder shimmer">
+          <img
+            src="assets/images/services/inverter-battery.webp"
+            alt="Hybrid inverter and battery system mounted on a wall"
+            width="800" height="450"
+            loading="lazy"
+            onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Off-Grid · On-Grid · Hybrid</span>
+          <h3 class="card-title">Inverter &amp; Battery Solutions</h3>
+          <p class="card-desc">
+            Off-grid, On-grid, and Hybrid Solar Solutions using inverter batteries and UPS systems.
+          </p>
+          <a class="card-link" href="#contact">Read More →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="card-image-wrapper image-placeholder shimmer">
+          <img
+            src="assets/images/services/solar-panels.webp"
+            alt="High-grade monocrystalline solar panels"
+            width="800" height="450"
+            loading="lazy"
+            onerror="this.style.display='none'">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Supply</span>
+          <h3 class="card-title">Quality Solar Panels</h3>
+          <p class="card-desc">
+            Supply of high-grade solar panels for residential and commercial projects.
+          </p>
+          <a class="card-link" href="#contact">Read More →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     6. WHY CHOOSE US
+     ===================================================== -->
+<section class="section section--bg-subtle" aria-labelledby="why-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <span class="section-eyebrow">Why Jaidada Solar</span>
+      <h2 id="why-heading">Trusted. Certified. <span class="text-gradient">Always Available.</span></h2>
+    </header>
+
+    <div class="card-grid card-grid--3">
+      <article class="why-card">
+        <span class="why-card__icon" aria-hidden="true"><i data-lucide="sun"></i></span>
+        <h3 class="why-card__title">Local Expertise</h3>
+        <p class="why-card__desc">Deep knowledge of Haldia's energy infrastructure and grid requirements.</p>
+      </article>
+      <article class="why-card">
+        <span class="why-card__icon" aria-hidden="true"><i data-lucide="zap"></i></span>
+        <h3 class="why-card__title">End-to-End Service</h3>
+        <p class="why-card__desc">From consultation and installation to maintenance and repair — one team, full lifecycle.</p>
+      </article>
+      <article class="why-card">
+        <span class="why-card__icon" aria-hidden="true"><i data-lucide="shield-check"></i></span>
+        <h3 class="why-card__title">Certified Installations</h3>
+        <p class="why-card__desc">Professional quality with guaranteed workmanship on every project.</p>
+      </article>
+      <article class="why-card">
+        <span class="why-card__icon" aria-hidden="true"><i data-lucide="phone-call"></i></span>
+        <h3 class="why-card__title">7-Day Support</h3>
+        <p class="why-card__desc">Reachable every day from 9 AM to 9 PM for queries and emergencies.</p>
+      </article>
+      <article class="why-card">
+        <span class="why-card__icon" aria-hidden="true"><i data-lucide="indian-rupee"></i></span>
+        <h3 class="why-card__title">Cost-Effective Solutions</h3>
+        <p class="why-card__desc">Transparent pricing. No hidden charges. Maximum ROI on your solar investment.</p>
+      </article>
+      <article class="why-card">
+        <span class="why-card__icon" aria-hidden="true"><i data-lucide="building-2"></i></span>
+        <h3 class="why-card__title">Residential &amp; Industrial</h3>
+        <p class="why-card__desc">Serving households and large-scale industrial clients with equal commitment.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     7. HOW IT WORKS
+     ===================================================== -->
+<section id="process" class="section section--bg-primary process" aria-labelledby="process-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <span class="section-eyebrow">How It Works</span>
+      <h2 id="process-heading">Your Solar Journey in <span class="text-gradient">4 Simple Steps</span></h2>
+    </header>
+
+    <div class="process__list">
+      <div class="process-step">
+        <span class="process-step__bignum" aria-hidden="true">01</span>
+        <span class="process-step__node">1</span>
+        <h3 class="process-step__title">Free Consultation</h3>
+        <p class="process-step__desc">Call or visit. Our team assesses your energy needs and recommends the best system.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-step__bignum" aria-hidden="true">02</span>
+        <span class="process-step__node">2</span>
+        <h3 class="process-step__title">Custom Design</h3>
+        <p class="process-step__desc">We design a system layout tailored to your roof, budget, and consumption requirements.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-step__bignum" aria-hidden="true">03</span>
+        <span class="process-step__node">3</span>
+        <h3 class="process-step__title">Professional Installation</h3>
+        <p class="process-step__desc">Certified technicians install your system with precision, care, and full safety compliance.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-step__bignum" aria-hidden="true">04</span>
+        <span class="process-step__node">4</span>
+        <h3 class="process-step__title">Ongoing Support</h3>
+        <p class="process-step__desc">Annual maintenance, monitoring, and our 7-day helpline keeps your system peak-performing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     8. TEAM
+     ===================================================== -->
+<section id="team" class="section section--bg-surface" aria-labelledby="team-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <span class="section-eyebrow">Our Team</span>
+      <h2 id="team-heading">The Professionals Behind <span class="text-gradient">Your Power</span></h2>
+      <p class="section-subheading">
+        At Jaidada Solar Tech, our team is a dedicated group of professionals driven by a shared passion for
+        renewable energy. With a blend of experience, innovation, and customer focus, we work together to deliver
+        reliable solar and power solutions for every client. Your energy goals are our mission.
+      </p>
+    </header>
+
+    <div class="card-grid card-grid--4">
+      <div class="team-card">
+        <div class="team-avatar-wrapper">
+          <span class="team-initials" aria-hidden="true">MS</span>
+        </div>
+        <h3 class="team-name">Mallika Samanta</h3>
+        <span class="team-role">Founder</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar-wrapper">
+          <span class="team-initials" aria-hidden="true">SS</span>
+        </div>
+        <h3 class="team-name">Sourav Samanta</h3>
+        <span class="team-role">Developer</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar-wrapper">
+          <span class="team-initials" aria-hidden="true">MM</span>
+        </div>
+        <h3 class="team-name">Mahanlal Mondal</h3>
+        <span class="team-role">Manager</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar-wrapper">
+          <span class="team-initials" aria-hidden="true">NA</span>
+        </div>
+        <h3 class="team-name">Nabab Adhikari</h3>
+        <span class="team-role">Marketing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     9. TESTIMONIALS / TRUSTED CLIENTS
+     ===================================================== -->
+<section class="section section--bg-warm" aria-labelledby="clients-heading">
+  <div class="container">
+    <header class="section-header reveal">
+      <span class="section-eyebrow">Trusted By</span>
+      <h2 id="clients-heading">Our Trusted <span class="text-gradient">Clients &amp; Partners</span></h2>
+      <p class="section-subheading">Growing network of satisfied clients across Haldia and West Bengal.</p>
+    </header>
+
+    <div class="logo-marquee" aria-label="Partner logos">
+      <div class="logo-track">
+        <!-- First set -->
+        <div class="logo-item">Partner Logo</div>
+        <div class="logo-item">Partner Logo</div>
+        <div class="logo-item">Partner Logo</div>
+        <div class="logo-item">Partner Logo</div>
+        <div class="logo-item">Partner Logo</div>
+        <div class="logo-item">Partner Logo</div>
+        <div class="logo-item">Partner Logo</div>
+        <div class="logo-item">Partner Logo</div>
+        <!-- Duplicate for seamless loop -->
+        <div class="logo-item" aria-hidden="true">Partner Logo</div>
+        <div class="logo-item" aria-hidden="true">Partner Logo</div>
+        <div class="logo-item" aria-hidden="true">Partner Logo</div>
+        <div class="logo-item" aria-hidden="true">Partner Logo</div>
+        <div class="logo-item" aria-hidden="true">Partner Logo</div>
+        <div class="logo-item" aria-hidden="true">Partner Logo</div>
+        <div class="logo-item" aria-hidden="true">Partner Logo</div>
+        <div class="logo-item" aria-hidden="true">Partner Logo</div>
+      </div>
+    </div>
+
+    <figure class="testimonial-card reveal">
+      <span class="testimonial-card__quote-mark" aria-hidden="true">&ldquo;</span>
+      <blockquote class="testimonial-card__quote">
+        Jaidada Solar Tech transformed our factory's energy costs. Professional team, clean installation, and
+        they've been responsive every time we've needed support. Highly recommended.
+      </blockquote>
+      <figcaption class="testimonial-card__attr">— Client Name, Company, Haldia</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- =====================================================
+     10. CONTACT
+     ===================================================== -->
+<section id="contact" class="section section--bg-warm" aria-labelledby="contact-heading">
+  <div class="container">
+    <header class="section-header section-header--left reveal">
+      <span class="section-eyebrow">Get In Touch</span>
+      <h2 id="contact-heading">Start Your <span class="text-gradient">Solar Journey</span> Today</h2>
+    </header>
+
+    <div class="contact-grid">
+      <!-- Replace YOUR_FORM_ID with your Formspree endpoint when ready -->
+      <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <input type="text"  name="name"    placeholder="Your Full Name" required autocomplete="name">
+        <input type="email" name="email"   placeholder="Email Address"   required autocomplete="email">
+        <input type="tel"   name="phone"   placeholder="Phone Number"             autocomplete="tel">
+        <select name="service" aria-label="Service interest">
+          <option value="">Select Service Interest</option>
+          <option>Solar Installation</option>
+          <option>Generator Sales</option>
+          <option>Solar Maintenance</option>
+          <option>Inverter &amp; Battery</option>
+          <option>Other</option>
+        </select>
+        <textarea name="message" rows="5" placeholder="Tell us about your energy needs..."></textarea>
+        <button type="submit" class="btn-primary">Send Your Enquiry</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="reveal">
+        <div class="contact-info-card">
+          <div class="info-row">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <span>Kadamtala More, Haldia – 721657, West Bengal</span>
+          </div>
+          <div class="info-row">
+            <i data-lucide="phone" aria-hidden="true"></i>
+            <span>
+              <a href="tel:+919547488969">+91 95474 88969</a> ·
+              <a href="tel:+917008213096">+91 70082 13096</a>
+            </span>
+          </div>
+          <div class="info-row">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            <span><a href="mailto:info@jaidasasolartech.com">info@jaidasasolartech.com</a></span>
+          </div>
+          <div class="info-row">
+            <i data-lucide="clock" aria-hidden="true"></i>
+            <span>Every Day, 9:00 AM – 9:00 PM</span>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            title="Map of Haldia, West Bengal"
+            src="https://www.google.com/maps?q=Kadamtala+More,+Haldia,+West+Bengal+721657&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =====================================================
+     11. FOOTER
+     ===================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div>
+        <a class="nav__logo" href="#home" aria-label="Jaidada Solar Tech Energy">
+          <svg class="nav__logo-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="50" cy="50" r="18" fill="currentColor" stroke="none"/>
+            <line x1="50" y1="6"  x2="50" y2="22"/>
+            <line x1="50" y1="78" x2="50" y2="94"/>
+            <line x1="6"  y1="50" x2="22" y2="50"/>
+            <line x1="78" y1="50" x2="94" y2="50"/>
+            <line x1="17" y1="17" x2="29" y2="29"/>
+            <line x1="71" y1="71" x2="83" y2="83"/>
+            <line x1="83" y1="17" x2="71" y2="29"/>
+            <line x1="29" y1="71" x2="17" y2="83"/>
+          </svg>
+          <span class="nav__logo-text-wrap">
+            <span class="nav__logo-primary">JAIDADA</span>
+            <span class="nav__logo-secondary">SOLAR TECH ENERGY</span>
+          </span>
+        </a>
+        <p class="footer__tagline">Reliable &amp; Green Energy Solutions for Everyone!</p>
+        <p class="footer__brand-desc">
+          Jaidada Solar Tech Energy is Haldia's trusted solar installation and power solutions company. We serve
+          residential and industrial clients across West Bengal with quality, reliability, and care.
+        </p>
+        <div class="footer__social" aria-label="Follow us">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.25-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H8v3h2.5V21h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.7-1.7C18.3 5 12 5 12 5s-6.3 0-7.9.5A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.7 1.7C5.7 19 12 19 12 19s6.3 0 7.9-.5a2.5 2.5 0 0 0 1.7-1.7c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5 3-5 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h4 class="footer__col-title">Our Products</h4>
+        <ul class="footer__list">
+          <li><a href="#services">Solar Panels</a></li>
+          <li><a href="#services">Inverter &amp; Battery Systems</a></li>
+          <li><a href="#services">Quality Solar Panels</a></li>
+          <li><a href="#services">Generator Sales &amp; Support</a></li>
+          <li><a href="#services">Solar Maintenance &amp; Repair</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="footer__col-title">Services</h4>
+        <ul class="footer__list">
+          <li><a href="#services">Solar Panel Installation</a></li>
+          <li><a href="#services">Generator Sales &amp; Support</a></li>
+          <li><a href="#services">Inverter &amp; Battery Solutions</a></li>
+          <li><a href="#services">Solar Maintenance &amp; Repair</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="footer__col-title">Contact</h4>
+        <div class="footer__list">
+          <div class="footer__contact-row">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            <span>Kadamtala More, Haldia – 721657</span>
+          </div>
+          <div class="footer__contact-row">
+            <i data-lucide="phone" aria-hidden="true"></i>
+            <span><a href="tel:+919547488969">+91 95474 88969</a></span>
+          </div>
+          <div class="footer__contact-row">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            <span><a href="mailto:info@jaidasasolartech.com">info@jaidasasolartech.com</a></span>
+          </div>
+          <div class="footer__contact-row">
+            <i data-lucide="clock" aria-hidden="true"></i>
+            <span>Every Day 9:00 AM – 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Copyright © <span id="footer-year">2025</span> Jaidada Solar Tech Energy. All rights reserved.</span>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- =====================================================
+     12. WHATSAPP FLOAT BUTTON
+     ===================================================== -->
+<a class="whatsapp-float" href="https://wa.me/919547488969" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M20.5 3.5A11 11 0 0 0 3.6 17.7L2 22l4.4-1.6A11 11 0 1 0 20.5 3.5zM12 20.1a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-2.6 1 .9-2.5-.2-.3A8.1 8.1 0 1 1 12 20.1zm4.5-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.4-1.5-.8-2.2-1.6-.6-.5-1-1.2-1.4-1.9-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.2-.5 0-.2 0-.3-.1-.5l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3c-.2.3-.9.9-.9 2.1s.9 2.5 1.1 2.7c.1.2 1.8 2.7 4.3 3.8 2.5 1.1 2.5.7 3 .7.4 0 1.4-.6 1.6-1.1.2-.6.2-1 .2-1.1-.1-.1-.2-.2-.4-.3z"/>
+  </svg>
+</a>
+
+</body>
+</html>
