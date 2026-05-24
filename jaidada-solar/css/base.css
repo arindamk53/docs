@@ -1,0 +1,172 @@
+/* =====================================================
+   base.css
+   CSS reset + global typography + body defaults.
+   ===================================================== */
+
+/* === Reset === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body-family);
+  font-weight: 400;
+  font-size: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* === Headings === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading-family);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  color: var(--color-text-primary);
+  letter-spacing: var(--tracking-hero);
+}
+
+h1 { font-size: var(--font-hero); font-family: var(--font-display-family); font-weight: 400; }
+h2 { font-size: var(--font-h2); }
+h3 { font-size: var(--font-h3); }
+
+p {
+  line-height: var(--leading-body);
+  color: var(--color-text-primary);
+}
+
+/* === Links === */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+a:hover { color: var(--color-solar-amber); }
+
+/* === Lists === */
+ul, ol { list-style: none; }
+
+/* === Media === */
+img, video, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Forms === */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+}
+
+/* === Selection === */
+::selection {
+  background: var(--color-solar-amber);
+  color: var(--color-bg-primary);
+}
+
+/* === Focus visible === */
+:focus { outline: none; }
+
+:focus-visible {
+  outline: 2px solid var(--color-solar-amber);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* === Scrollbar (subtle, themed) === */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track { background: var(--color-bg-primary); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-subtle);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-solar-amber); }
+
+/* === Utility text styles === */
+.section-eyebrow,
+.hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-heading-family);
+  font-weight: 600;
+  font-size: var(--font-sm);
+  color: var(--color-solar-amber);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.section-subheading {
+  color: var(--color-text-secondary);
+  font-size: var(--font-body-lg);
+  max-width: 640px;
+  margin: 16px auto 0;
+}
+
+.text-gradient {
+  background: var(--gradient-solar-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Image placeholder (used until real images are dropped in) */
+.image-placeholder {
+  position: relative;
+  background: var(--gradient-image-placeholder);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.image-placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 30% 20%,
+    rgba(245, 166, 35, 0.18) 0%,
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}

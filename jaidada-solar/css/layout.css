@@ -1,0 +1,95 @@
+/* =====================================================
+   layout.css
+   Container, section spacing, and grid utilities.
+   ===================================================== */
+
+/* === Container === */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
+}
+
+/* === Generic section === */
+.section {
+  position: relative;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.section--bg-primary { background-color: var(--color-bg-primary); }
+.section--bg-surface { background-color: var(--color-bg-surface); }
+.section--bg-warm    { background-color: var(--color-bg-warm); }
+.section--bg-subtle  { background-color: var(--color-bg-subtle); }
+
+/* === Section header === */
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-header--left {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: var(--font-h2);
+}
+
+/* === Two-column layouts === */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.two-col--55-45 { grid-template-columns: 1fr; }
+
+/* === Card grids === */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.card-grid--2 { grid-template-columns: 1fr; }
+.card-grid--3 { grid-template-columns: 1fr; }
+.card-grid--4 { grid-template-columns: 1fr; }
+
+/* === Stats grid === */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  text-align: center;
+}
+
+/* === Service grid (asymmetric) === */
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.service-grid__featured {
+  grid-column: 1 / -1;
+}
+
+/* === Footer grid === */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+/* === Helpers === */
+.text-center { text-align: center; }
+.flow > * + * { margin-top: 1.25rem; }
+.mt-lg  { margin-top: 32px; }
+.mt-xl  { margin-top: 48px; }
+.mb-lg  { margin-bottom: 32px; }
+.mb-xl  { margin-bottom: 48px; }

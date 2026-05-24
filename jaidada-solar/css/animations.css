@@ -1,0 +1,94 @@
+/* =====================================================
+   animations.css
+   @keyframes, transitions, reveal helpers, reduced motion.
+   ===================================================== */
+
+/* === Reveal pre-state (before GSAP fires) ===
+   GSAP overrides these on entry; if JS fails, the
+   visibility fallback below ensures content stays readable. */
+.reveal {
+  opacity: 1;
+  transform: none;
+  will-change: transform, opacity;
+}
+
+/* When JS is loaded, give scroll-trigger time to take over */
+html.js-loaded .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* If JS doesn't run within 1.2s, snap back so content is never hidden */
+html:not(.js-loaded) .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+/* === Hero scroll line animation === */
+@keyframes scroll-line {
+  0%   { transform: scaleY(0); transform-origin: top; }
+  50%  { transform: scaleY(1); transform-origin: top; }
+  51%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* === Logo marquee === */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* === WhatsApp pulse === */
+@keyframes whatsapp-pulse {
+  0%   { transform: scale(1);   opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0;   }
+}
+
+/* === Subtle amber shimmer for image placeholders === */
+@keyframes amber-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.image-placeholder.shimmer {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245, 166, 35, 0) 0%,
+      rgba(245, 166, 35, 0.08) 50%,
+      rgba(245, 166, 35, 0) 100%
+    ),
+    var(--gradient-image-placeholder);
+  background-size: 200% 100%, 100% 100%;
+  animation: amber-shimmer 3.5s ease-in-out infinite;
+}
+
+/* === Glow pulse (used for stat numbers / hover tints) === */
+@keyframes glow-pulse {
+  0%, 100% { text-shadow: 0 0 20px rgba(245, 166, 35, 0.0); }
+  50%      { text-shadow: 0 0 28px rgba(245, 166, 35, 0.35); }
+}
+
+/* === Reduced motion =========================================
+   Strict global reset. Anything that depends on motion either
+   stops or runs in 1ms. Particle canvas + GSAP also bail in JS. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html.js-loaded .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .logo-track { animation: none; }
+  .whatsapp-float::before { animation: none; }
+  .hero-scroll__line { animation: none; opacity: 0.6; }
+  #hero-canvas { display: none; }
+}

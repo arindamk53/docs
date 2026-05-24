@@ -1,0 +1,78 @@
+/* =====================================================
+   variables.css
+   Solar Forge design system — all CSS custom properties.
+   Edit only here to retune the entire site palette/scale.
+   ===================================================== */
+
+:root {
+  /* === BACKGROUNDS === */
+  --color-bg-primary:     #080808;    /* Deep black — primary background */
+  --color-bg-surface:     #111010;    /* Elevated surface — card backgrounds */
+  --color-bg-warm:        #1C1813;    /* Warm dark — about, contact sections */
+  --color-bg-subtle:      #242018;    /* Subtle warm — alternating sections */
+  --color-bg-footer:      #050505;    /* Footer — slightly darker than primary */
+
+  /* === SOLAR ACCENT COLORS === */
+  --color-solar-amber:    #F5A623;    /* PRIMARY ACCENT — The Sun. CTAs, borders, icons */
+  --color-solar-flare:    #E8520A;    /* Solar Flare Orange. Hover, gradient endpoints */
+  --color-solar-pale:     #FFF3CC;    /* Pale Sun — thin text highlights, captions */
+
+  /* === TEXT COLORS === */
+  --color-text-primary:   #F0EDE8;    /* Warm white — primary body and heading text */
+  --color-text-secondary: #8A8480;    /* Warm gray — secondary text, captions */
+  --color-text-muted:     #504B46;    /* Muted warm — placeholder, disabled */
+
+  /* === BORDERS === */
+  --color-border-subtle:  #2A2520;
+  --color-border-glow:    rgba(245, 166, 35, 0.25);
+
+  /* === GRADIENTS === */
+  --gradient-solar-text:  linear-gradient(135deg, #F5A623 0%, #E8520A 60%, #FF8C00 100%);
+  --gradient-cta:         linear-gradient(135deg, #F5A623, #E8520A);
+  --gradient-section-fade: linear-gradient(180deg, #080808 0%, #1C1813 50%, #080808 100%);
+  --gradient-card-glow:   radial-gradient(ellipse at top, rgba(245, 166, 35, 0.12) 0%, transparent 60%);
+  --gradient-image-placeholder: linear-gradient(135deg, #1C1813, #2A2318);
+
+  /* === FONT FAMILIES === */
+  --font-display-family: 'Bebas Neue', sans-serif;   /* Hero, stats numbers ONLY */
+  --font-heading-family: 'Exo 2', sans-serif;        /* Headings, nav, buttons, labels */
+  --font-body-family:    'DM Sans', sans-serif;      /* All body text */
+
+  /* === TYPOGRAPHY SCALE === */
+  --font-hero:       clamp(4rem, 10vw, 9rem);
+  --font-display:    clamp(3rem, 6vw, 5.5rem);
+  --font-h2:         clamp(2rem, 4vw, 3.2rem);
+  --font-h3:         clamp(1.3rem, 2.5vw, 1.8rem);
+  --font-body-lg:    1.125rem;
+  --font-body:       1rem;
+  --font-sm:         0.875rem;
+  --font-xs:         0.75rem;
+  --font-stat:       clamp(3.5rem, 7vw, 6.5rem);
+
+  /* === LINE HEIGHTS & TRACKING === */
+  --leading-tight:   1.1;
+  --leading-body:    1.7;
+  --leading-relaxed: 1.85;
+  --tracking-wide:   0.08em;
+  --tracking-hero:   0.02em;
+  --tracking-label:  0.12em;
+
+  /* === SPACING === */
+  --section-padding: clamp(80px, 10vw, 140px);
+  --container-max:   1400px;
+  --container-pad:   clamp(16px, 4vw, 48px);
+  --border-radius-card: 8px;
+  --border-radius-sm: 4px;
+
+  /* === TRANSITIONS === */
+  --transition-base: 0.35s ease;
+  --transition-card: 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-slow: 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* === Z-INDEX SCALE === */
+  --z-base:     1;
+  --z-content:  10;
+  --z-nav:      100;
+  --z-overlay:  500;
+  --z-float:    999;
+}
