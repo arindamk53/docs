@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpan | Video Editor - Arpancreation</title>
+    <meta name="description" content="Portfolio of Arpan, a professional Video Editor at Arpancreation. Premium video editing services.">
+    
+    <!-- Preload fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Arpancreation Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span class="logo-text" style="display: none;">arpancreation</span>
+            </a>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="fade-in">Arpan</span>
+                </h1>
+                <p class="hero-subtitle fade-in delay-1">
+                    Professional Video Editor crafting compelling visual stories that captivate and inspire.
+                </p>
+                <div class="hero-buttons fade-in delay-2">
+                    <a href="#services" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in delay-3">
+                <div class="profile-placeholder">
+                    <img src="assets/profile.jpg" alt="Arpan Profile" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'profile-fallback\'><span>AP</span></div>';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p class="lead">
+                        I'm Arpan, the founder of <strong>arpancreation</strong>, where creativity meets precision in every frame.
+                    </p>
+                    <p>
+                        With years of experience in video editing, I specialize in transforming raw footage into polished, engaging narratives. My approach combines technical expertise with artistic vision to deliver content that resonates with audiences and elevates brands.
+                    </p>
+                    <p>
+                        Whether it's corporate videos, social media content, documentaries, or creative projects, I bring dedication and attention to detail to every project. Let's create something extraordinary together.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Services</h2>
+                <p>What I offer</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="8" width="40" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M20 22L28 26L20 30V22Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional editing for commercials, social media, documentaries, and corporate content with seamless transitions and pacing.</p>
+                </div>
+                
+                <div class="service-card fade-in delay-1">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="6" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Color Grading</h3>
+                    <p>Enhance your footage with professional color correction and grading to achieve the perfect mood and visual consistency.</p>
+                </div>
+                
+                <div class="service-card fade-in delay-2">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 24C8 15.163 15.163 8 24 8V16C19.582 16 16 19.582 16 24H8Z" fill="currentColor"/>
+                            <path d="M24 40C32.837 40 40 32.837 40 24H32C32 28.418 28.418 32 24 32V40Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Motion Graphics</h3>
+                    <p>Dynamic animations and graphics to add visual interest and communicate complex ideas effectively.</p>
+                </div>
+                
+                <div class="service-card fade-in delay-3">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 16H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 24H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 32H36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Sound Design</h3>
+                    <p>Audio mixing, sound effects, and music integration to create an immersive auditory experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Get in Touch</h2>
+                <p>Let's start a conversation</p>
+            </div>
+            <div class="contact-card fade-in">
+                <div class="contact-content">
+                    <h3>Ready to bring your vision to life?</h3>
+                    <p>I'm always excited to work on new projects. Whether you have a specific idea or need guidance, let's discuss how we can create something amazing together.</p>
+                    
+                    <div class="contact-actions">
+                        <a href="https://tr.ee/rV9dJcPoUV" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+                            Start a Project
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-email">
+                        <p>Or email me directly:</p>
+                        <a href="mailto:hello@arpancreations.site" class="email-link">hello@arpancreations.site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">arpancreation</span>
+                    <p>Premium video editing services</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 11V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 8V8.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 16V13C12 12.4477 12.4477 12 13 12H14C14.5523 12 15 12.4477 15 13V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12C22 16.5 21 20 19.5 20C18 20 15.5 20 12 20C8.5 20 6 20 4.5 20C3 20 2 16.5 2 12C2 7.5 3 4 4.5 4C6 4 8.5 4 12 4C15.5 4 18 4 19.5 4C21 4 22 7.5 22 12Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 9L15 12L10 15V9Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 arpancreation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
